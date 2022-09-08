@@ -1,0 +1,25 @@
+﻿<Window
+    Height="450"
+    Title="MainWindow"
+    Width="800"
+    mc:Ignorable="d"
+    x:Class="WpfEventTests.MainWindow"
+    xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+    xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+    xmlns:local="clr-namespace:WpfEventTests"
+    xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <Grid>
+        <TextBox
+            Height="200"
+            HorizontalAlignment="Center"
+            KeyDown="UIElement_OnKeyDown"
+            KeyUp="UIElement_OnKeyUp"
+            PreviewKeyDown="UIElement_OnKeyDown"
+            PreviewKeyUp="UIElement_OnKeyUp"
+            TextChanged="TextBoxBase_OnTextChanged"
+            VerticalAlignment="Center"
+            Width="200" />
+
+    </Grid>
+</Window>
